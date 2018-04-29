@@ -1,0 +1,1 @@
+"use strict";module.exports.route=function(o){var e=require("./controllers/controllers");o.post("/",e.login),o.get("/",function(o,e){e.sendFile("/view/login.html",{root:__dirname})}),o.post("/signup",e.createAccout),o.get("/signup",function(o,e){console.log("Under Construction!!"),e.sendFile("/view/signup.html",{root:__dirname})})};
